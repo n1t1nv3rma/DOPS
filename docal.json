@@ -1,0 +1,121 @@
+{
+    "base_dev": {
+        "togaf": 5,
+        "zacman": 5,
+        "dodaf": 5,
+        "arch_other": 5
+    },
+    "agile_dev": {
+        "jira": 1,
+        "confluence": 1,
+        "scrum": 1,
+        "kanban": 1,
+        "agile_other": 1
+    },
+    "testing_dev": {
+        "jmeter": 5,
+        "selenium": 5,
+        "hpqc": 5,
+        "cucumber": 5,
+        "testing_other": 5
+    },
+    "deploy_dev": {
+        "ide": 1,
+        "vagrant": 1,
+        "virtual": 1,
+        "cloud": 1,
+        "deploy_other": 1
+    },
+    "pmo_dev": {
+        "project": 1,
+        "release": 1,
+        "cab": 1,
+        "knowledge": 1,
+        "proj_other": 1
+    },
+    "code_dev": {
+        "ide": 2,
+        "scm": 2,
+        "tdd": 1,
+        "code_other": 1
+    },
+    "build_dev": {
+        "ant": 2,
+        "jenkins": 2,
+        "build_other": 1
+    },
+    "pkg_dev": {
+        "artifactory": 2,
+        "maven": 2,
+        "pkg_other": 1
+    },
+    "test_dev": {
+        "junit": 1,
+        "rspec": 1,
+        "nunit": 1,
+        "testng": 1,
+        "spock": 1,
+        "test_other": 1
+    },
+    "cove_dev": {
+        "sonarqube": 1,
+        "cobertura": 1,
+        "clover": 1,
+        "ncover": 1,
+        "simplecov": 1,
+        "code_other": 1
+    },
+    "agile_ops": {
+        "jira": 1,
+        "confluence": 1,
+        "kanban": 1,
+        "scrum": 1,
+        "agile_other": 1
+    },
+    "iaas_ops": {
+        "private": 2,
+        "public": 3
+    },
+    "paas_ops": {
+        "private": 2,
+        "public": 3
+    },
+    "pmo_ops": {
+        "project": 2,
+        "change": 1,
+        "knowledge": 1,
+        "cab": 1
+    },
+    "cont_ops": {
+        "issue": 2,
+        "risk": 2,
+        "servcont": 1
+    },
+    "config_ops": {
+        "chef": 5,
+        "puppet": 5,
+        "ansible": 5,
+        "salt": 5,
+        "cfengine": 5,
+        "config_other": 5
+    },  
+    "deploy_ops": {
+        "chef": 2,
+        "cloud": 3,
+        "deploy_other": 1
+    },
+    "monit_ops": {
+        "nagios": 1,
+        "zabbix": 2,
+        "cloud": 2,
+        "monit_other": 1
+    },
+    "analytics_ops": {
+        "splunk": 5,
+        "sumologic": 5,
+        "loggly": 5,
+        "arcsight": 5,
+        "cloud": 5,
+        "analytics_others": 5
+    }
+}

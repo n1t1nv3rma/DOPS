@@ -1,0 +1,154 @@
+<html>
+    <head>
+	<title>DevOps Calculator</title>
+        <script src="jquery.js" type="text/javascript"></script>
+	<script src="docal.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="docal.css" type="text/css" />
+	
+	
+    </head>
+<body>
+
+<div class="docaldiv">
+<h3>Welcome to DevOps Calculator</h3>
+<form id="docalform">Select what's in practice and click Submit
+<ul class="docalul">
+<li class="docaltitle">Development - Collaboration</li>
+<li class="docalfield">
+<label class="docalsubtitle">Architecture & Development standards:</label>
+<input name="base_dev" type="radio" value="togaf" />Togaf
+<input name="base_dev" type="radio" value="zacman" />Zacman
+<input name="base_dev" type="radio" value="dodaf" />Dodaf
+<input name="base_dev" type="radio" value="arch_other" />Other</li>
+<li class="docalfield">
+<label class="docalsubtitle">Agilie methodology:</label>
+<input name="agile_dev" type="checkbox" value="jira" />Atlassian JIRA
+<input name="agile_dev" type="checkbox" value="confluence" />Atlassian Confluence
+<input name="agile_dev" type="checkbox" value="scrum" />Scrum
+<input name="agile_dev" type="checkbox" value="kanban" />Kanban
+<input name="agile_dev" type="checkbox" value="agile_other" />Other</li>
+<li class="docalfield">
+<label class="docalsubtitle">Testing automation:</label>
+<input name="testing_dev" type="radio" value="jmeter" />JMeter
+<input name="testing_dev" type="radio" value="selenium" />Selenium
+<input name="testing_dev" type="radio" value="hpqc" />HPQC
+<input name="testing_dev" type="radio" value="cucumber" />Cucumber
+<input name="testing_dev" type="radio" value="testing_other" />Other</li>
+<li class="docalfield">
+<label class="docalsubtitle">Deployment Automation:</label>
+<input name="deploy_dev" type="checkbox" value="ide" />IDE (Netbeans, Eclipse, Visual Studio)
+<input name="deploy_dev" type="checkbox" value="vagrant" />Vagrant, Docker, Packer etc.
+<input name="deploy_dev" type="checkbox" value="virtual" />Virtual Box, VMware etc.
+<input name="deploy_dev" type="checkbox" value="cloud" />Cloud (AWS, Azzure, Google etc)
+<input name="deploy_dev" type="checkbox" value="deploy_other" />Other</li>
+<li class="docalfield">
+<label class="docalsubtitle">Project Management &amp; Service Transition:</label>
+<input name="pmo_dev" type="checkbox" value="project" />Project Management (Prince2, PMP/PMBOK)
+<input name="pmo_dev" type="checkbox" value="release" />Release/Change Management (ITIL)
+<input name="pmo_dev" type="checkbox" value="cab" />CAB (ITIL)
+<input name="pmo_dev" type="checkbox" value="knowledge" />Knowledge Transfer (ITIL)
+<input name="pmo_dev" type="checkbox" value="proj_other" />Other</li>
+
+<li class="docaltitle">Development - Automation</li>
+<li class="docalfield">
+<label class="docalsubtitle">Coding:</label>
+<input name="code_dev" type="checkbox" value="ide" />IDE (Netbeans, Eclipse, Visual Studio etc.)
+<input name="code_dev" type="checkbox" value="scm" />Source Control (Git, Subversion etc.)
+<input name="code_dev" type="checkbox" value="tdd" /> TDD, BDD (Test / Behaviour Driven Development)
+<input name="code_dev" type="checkbox" value="code_other" />Other</li>
+<li class="docalfield">
+<label class="docalsubtitle">Build automation:</label>
+<input name="build_dev" type="checkbox" value="ant" />Gradle, Maven, Ant/Ivy
+<input name="build_dev" type="checkbox" value="jenkins" />Jenkins, Bamboo, TeamCity
+<input name="build_dev" type="checkbox" value="build_other" />Others</li>
+<li class="docalfield">
+<label class="docalsubtitle">Package Management:</label>
+<input name="pkg_dev" type="checkbox" value="artifactory" />Artifactory, Nexus, Apache Archiva
+<input name="pkg_dev" type="checkbox" value="maven" />Maven, NPM, NuGet
+<input name="pkg_dev" type="checkbox" value="pkg_other" />Others</li>
+<li class="docalfield">
+<label class="docalsubtitle">Unit/Integeration Testing:</label>
+<input name="test_dev" type="checkbox" value="junit" />Junit
+<input name="test_dev" type="checkbox" value="rspec" />RSpec
+<input name="test_dev" type="checkbox" value="nunit" />Nunit
+<input name="test_dev" type="checkbox" value="testng" />TestNG
+<input name="test_dev" type="checkbox" value="spock" />Spock
+<input name="test_dev" type="checkbox" value="test_other" />Other</li>
+<li class="docalfield">
+<label class="docalsubtitle">Code coverage:</label>
+<input name="cove_dev" type="checkbox" value="sonarqube" />SonarQube
+<input name="cove_dev" type="checkbox" value="cobertura" />Cobertura
+<input name="cove_dev" type="checkbox" value="clover" />Clover
+<input name="cove_dev" type="checkbox" value="ncover" />NCover
+<input name="cove_dev" type="checkbox" value="simplecov" />Simplecov
+<input name="cove_dev" type="checkbox" value="code_other" />Other</li>
+
+<li class="docaltitle">Operations - Collaboration</li>
+<li class="docalfield">
+<label class="docalsubtitle">Agile Practices:</label>
+<input name="agile_ops" type="checkbox" value="jira" />Atlassian JIRA (Issues, Feedback)
+<input name="agile_ops" type="checkbox" value="confluence" />Atlassian Confluence (Documentation)
+<input name="agile_ops" type="checkbox" value="scrum" />Scrum (Daily standups)
+<input name="agile_ops" type="checkbox" value="kanban" />Kanban (Agility)
+<input name="agile_ops" type="checkbox" value="agile_other" />Other</li>
+<li class="docalfield">
+<label class="docalsubtitle">Infrastructure as a Service:</label>
+<input name="iaas_ops" type="checkbox" value="private" />Private Cloud (DC, VMware)
+<input name="iaas_ops" type="checkbox" value="public" />Public Cloud (AWS, Azure, RackSpace etc.)</li>
+<li class="docalfield">
+<label class="docalsubtitle">Platform as a Service:</label>
+<input name="paas_ops" type="checkbox" value="private" />Private Cloud (DC, VMware)
+<input name="paas_ops" type="checkbox" value="public" />Public (AWS, SalesForce, Azure, Google, IBM, OpenShift etc. )</li>
+<li class="docalfield">
+<label class="docalsubtitle">Service Transition:</label>
+<input name="pmo_ops" type="checkbox" value="project" />Project Management (Prince2, PMP/PMBOK)
+<input name="pmo_ops" type="checkbox" value="change" />Change Management, Incident Management (ITIL / ServiceNow)
+<input name="pmo_ops" type="checkbox" value="cab" />CAB (ITIL)
+<input name="pmo_ops" type="checkbox" value="knowledge" />Knowledge Transfer (ITIL)</li>
+<li class="docalfield">
+<label class="docalsubtitle">Continuous Service Improvement:</label>
+<input name="cont_ops" type="checkbox" value="issue" />Issues/Feedback Manangement (JIRA, ServiceNow, BMC Remedy)
+<input name="cont_ops" type="checkbox" value="risk" />Risks and Reporting (ITSM)
+<input name="cont_ops" type="checkbox" value="servcont" />Service Continuity (ITSM)</li>
+
+<li class="docaltitle">Operations - Automation</li>
+<li class="docalfield">
+<label class="docalsubtitle">Configuration Management:</label>
+<input name="config_ops" type="radio" value="chef" />Chef
+<input name="config_ops" type="radio" value="puppet" />Puppet
+<input name="config_ops" type="radio" value="ansible" />Ansible
+<input name="config_ops" type="radio" value="salt" />Salt
+<input name="config_ops" type="radio" value="cfengine" />CFEngine
+<input name="config_ops" type="radio" value="config_other" />Other</li>
+<li class="docalfield">
+<label class="docalsubtitle">Deployment Automation:</label>
+<input name="deploy_ops" type="checkbox" value="chef" />Chef, Puppet, Ansible, Salt
+<input name="deploy_ops" type="checkbox" value="cloud" />Cloud Services (AWS, Azure, Heroku, Google, Custom)
+<input name="deploy_ops" type="checkbox" value="deploy_other" />Other</li>
+<li class="docalfield">
+<label class="docalsubtitle">Monitoring:</label>
+<input name="monit_ops" type="checkbox" value="nagios" />Nagios, CA UIM, BMC, Solarwinds
+<input name="monit_ops" type="checkbox" value="zabbix" />Zabbix, NewRelic, ScienceLogic, AppDynamics
+<input name="monit_ops" type="checkbox" value="cloud" />Cloud Services (AWS, Azure, Heroku, Google, Custom)
+<input name="monit_ops" type="checkbox" value="monit_other" />Other</li>
+<li class="docalfield">
+<label class="docalsubtitle">Analysis:</label>
+<input name="analytics_ops" type="radio" value="splunk" />Splunk
+<input name="analytics_ops" type="radio" value="sumologic" />Sumo Logic
+<input name="analytics_ops" type="radio" value="loggly" />Loggly
+<input name="analytics_ops" type="radio" value="arcsight" />ArcSight
+<input name="analytics_ops" type="radio" value="cloud" />Cloud Services (AWS, Azure, Heroku, Google, Custom)
+<input name="analytics_ops" type="radio" value="analytics_others" />Other</li>
+</ul>
+<input type="button" value="Reset" /> <input name="submit" type="submit" value="submit" />
+
+</form>
+<div id="docalresults"></div>
+<div>
+    <div id="docallegend1"></div><div id="docallegend2"></div><div id="docallegend3"></div>
+</div>
+<div id="docalmessage"></div>
+</div>
+
+</body>
+</html>
